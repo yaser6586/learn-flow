@@ -33,7 +33,7 @@ export function Task({ task }) {
           }
         />
         <button
-          className="btn btn-success m-2 p-1"
+          className="btn btn-info m-2 p-1"
           onClick={() => setIsEditing(false)}
         >
           save
