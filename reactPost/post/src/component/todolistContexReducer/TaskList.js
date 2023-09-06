@@ -59,7 +59,7 @@ export function Task({ task }) {
             });
           }}
         >
-          delete
+          Delete
         </button>
       </>
     );
