@@ -1,0 +1,19 @@
+:root {
+  --pageBackGround: white;
+  --textColor: black;
+  --borderColor: black;
+  --nightBorderColor: lightblue;
+  --nightPageBackGround: rgb(16, 16, 17);
+  --nighTextColor: white;
+}
+body {
+  text-align: center;
+  background-color: var(--pageBackGround);
+}
+.box {
+  border: 1px solid;
+  /* we should use border-color for better switching between day and night mod ad avoid use shorthand border*/
+  border-color: var(--borderColor);
+  margin-top: 100px;
+  color: var(--textColor);
+}

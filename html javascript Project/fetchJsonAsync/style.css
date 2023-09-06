@@ -1,0 +1,18 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.listItem {
+  position: relative;
+  width: 20%;
+  border: solid cyan 2px;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 10px;
+}
+.dl {
+  background-color: brown;
+  position: absolute;
+  right: 5px;
+}

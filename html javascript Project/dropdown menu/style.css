@@ -1,0 +1,45 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(78, 90, 86);
+}
+.dropdownMenu {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 40px;
+  background-color: aquamarine;
+  position: relative;
+}
+.dropdownMenu ul {
+  list-style: none;
+}
+.dropdownMenu a {
+  text-decoration: none;
+  color: aliceblue;
+
+  background-color: blue;
+}
+#subitem1,
+#subitem2 {
+  display: none;
+  animation-name: sub;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+}
+#cbtn {
+  display: none;
+}
+#btn,
+#cbtn {
+  position: absolute;
+  margin-right: auto;
+  top: 0px;
+  right: 0px;
+}
+@keyframes sub {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}

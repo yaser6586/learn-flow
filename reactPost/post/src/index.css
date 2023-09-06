@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+}
+.tasks {
+  list-style-type: none;
+  color: brown;
+}
+.todo-input {
+  border-radius: 20px;
+}
+.container {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+  border: dashed cyan;
+  margin-left: 400px;
+  padding: 50px;
+  width: auto;
+}
+li {
+  list-style: circle;
+}
+.btt {
+  margin-left: auto;
+}
+.todo {
+  border-style: dashed;
+  border-color: aqua;
+  position: absolute;
+  margin: 20px;
+  padding: 30px;
+}
+.listUser {
+  position: relative;
+  background-color: rgb(224, 224, 128);
+  margin: 5px;
+  list-style: none;
+  border: solid black 2px;
+  padding: 5px;
+  width: 30%;
+  height: 50px;
+  border-radius: 20px;
+}
+.btn {
+  position: absolute;
+  padding: auto;
+  right: 10px;
+  background-color: aqua;
+  border-radius: 10px;
+}

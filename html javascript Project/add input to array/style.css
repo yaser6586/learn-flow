@@ -1,0 +1,30 @@
+body {
+  background-color: azure;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.fcontainer {
+  background-color: rgb(70, 70, 57);
+  position: relative;
+  width: 400px;
+  height: 200px;
+  top: 0px;
+}
+.fcontainer label {
+  position: absolute;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
+.fcontainer input {
+  position: absolute;
+  padding: 20px;
+  margin: 20px;
+  left: 150px;
+}
+#submit {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}

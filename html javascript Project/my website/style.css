@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+.header {
+  background-color: rgb(42, 165, 149);
+  height: 200px;
+  width: auto;
+}
+.navbar {
+  display: flex;
+  background-color: rgb(28, 47, 63);
+  height: 50px;
+  position: relative;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 15px;
+  color: azure;
+}
+.navbar a:hover:not(.search) {
+  background-color: rgb(29, 106, 194);
+  color: black;
+  transition-delay: 100ms;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.search {
+  position: absolute;
+  right: 50px;
+}
+.search:hover {
+  transform: scaleX(1.5);
+  transition-duration: 200ms;
+}
+
+#searchtextbox:hover {
+  background-color: blueviolet;
+}
