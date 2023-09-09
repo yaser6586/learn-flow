@@ -13,11 +13,16 @@ import TodoApp from "./component/todolistContexReducer/TodoApp";
 import ListForFetch from "./component/ListForFetch";
 import ListFetchWithouteEffect from "./component/ListFetchWithouteEffect";
 import BlogHome from "./component/blog/BlogHome";
+import { Outlet } from "react-router-dom";
 
-export default function App() {
+export default function Root() {
   return (
     <>
-      <BlogHome />
+      <div className="navContainer">
+        <a href="home">home</a>
+        <a href="addPost">add Post</a>
+      </div>
+      <Outlet />
     </>
   );
 }

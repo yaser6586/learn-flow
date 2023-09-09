@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 
 function AddBlogPost() {
   const [title, setTilt] = useState("");
   const [body, setBody] = useState("");
-  function handleSubmit() {
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(e) {
+    e.preventDefault();
     const blog = { title, body };
     fetch("http://localhost:8000/blog", {
       method: "POST",
@@ -13,6 +17,10 @@ function AddBlogPost() {
 
       body: JSON.stringify(blog),
     });
+    setSubmitted(!submitted);
+  }
+  if (submitted) {
+    return <Navigate to="/home" />;
   }
 
   return (

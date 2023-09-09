@@ -7,7 +7,6 @@ import NavigateBar from "./NavigateBar";
 function BlogHome() {
   return (
     <>
-      <NavigateBar />
       <PostList />
       <AddBlogPost />
     </>
