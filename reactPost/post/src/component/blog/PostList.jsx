@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import useFetch from "./useFetch";
+import { Navigate } from "react-router-dom";
 
 function PostList() {
+  // i use custom hook to fetch data and use this three state in this component
   const { blogPost, error, loading } = useFetch("http://localhost:8000/blog");
 
   return (
@@ -23,6 +25,11 @@ function Post({ blog, index }) {
     <li className="post" key={index}>
       <h3>{blog.title}</h3>
       <p>{blog.body}</p>
+
+      <button>
+        <a href={`${blog.id}`}>detail</a>
+      </button>
     </li>
   );
 }
+

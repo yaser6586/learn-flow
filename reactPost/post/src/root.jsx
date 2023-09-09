@@ -16,12 +16,14 @@
 import { Outlet } from "react-router-dom";
 
 export default function Root() {
+  // i change app name to root for learning react-router
   return (
     <>
       <div className="navContainer">
         <a href="home">home</a>
         <a href="addPost">add Post</a>
       </div>
+      {/* this outlet let the page alwyas show this content in all pages */}
       <Outlet />
     </>
   );
