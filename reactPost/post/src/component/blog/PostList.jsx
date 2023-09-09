@@ -6,10 +6,12 @@ function PostList() {
 
   return (
     <ul className="postContainer">
-      {error && <h3>{error}</h3>}
+      {error && <h3 style={{ color: "red" }}>{error}</h3>}
       {loading && <h3>loading...</h3>}
       {blogPost &&
-        blogPost.map((blg, index) => <Post blog={blg} index={index} />)}
+        blogPost
+          .reverse()
+          .map((blg, index) => <Post blog={blg} index={index} />)}
     </ul>
   );
 }

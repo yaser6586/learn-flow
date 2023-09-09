@@ -20,10 +20,13 @@ function useFetch(url) {
           setBlogPost(postList);
           setLoading(false);
         })
-        .catch((err) => setError(err.message));
+        .catch((err) => {
+          setError(err.message);
+          setLoading(false);
+        });
       return () => (closeFetch = true);
     }, 1000);
-  }, []);
+  }, [url]);
   return { blogPost, error, loading };
 }
 

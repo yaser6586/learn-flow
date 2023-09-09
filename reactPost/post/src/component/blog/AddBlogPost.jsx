@@ -9,19 +9,23 @@ function AddBlogPost() {
   function handleSubmit(e) {
     e.preventDefault();
     const blog = { title, body };
-    fetch("http://localhost:8000/blog", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    if (title && body) {
+      fetch("http://localhost:8000/blog", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-      body: JSON.stringify(blog),
-    });
+        body: JSON.stringify(blog),
+      });
+    } else {
+      return alert("you should fill the boxes");
+    }
     setSubmitted(!submitted);
   }
-  if (submitted) {
+  if (submitted && title && body) {
     return <Navigate to="/home" />;
-  }
+  } 
 
   return (
     <div className="form-add">
