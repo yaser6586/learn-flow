@@ -12,11 +12,12 @@ import Todolist from "./component/Todolist";
 import TodoApp from "./component/todolistContexReducer/TodoApp";
 import ListForFetch from "./component/ListForFetch";
 import ListFetchWithouteEffect from "./component/ListFetchWithouteEffect";
+import BlogHome from "./component/blog/BlogHome";
 
 export default function App() {
   return (
     <>
-      <ListFetchWithouteEffect />
+      <BlogHome />
     </>
   );
 }
