@@ -25,7 +25,7 @@ function AddBlogPost() {
   }
   if (submitted && title && body) {
     return <Navigate to="/home" />;
-  } 
+  }
 
   return (
     <div className="form-add">
