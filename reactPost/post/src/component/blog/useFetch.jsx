@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-// i assign custom hook to fetch the data from json file but in new way i can use userProviderData hook and 
+// i assign custom hook to fetch the data from json file but in new way i can use userProviderData hook and
 function useFetch(url) {
-  const [blogPost, setBlogPost] = useState([{}]);
+  const [blogPost, setBlogPost] = useState();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -27,7 +27,7 @@ function useFetch(url) {
       return () => (closeFetch = true);
     }, 1000);
   }, [url]);
-  // this custom hook returned this three state 
+  // this custom hook returned this three state
   return { blogPost, error, loading };
 }
 
